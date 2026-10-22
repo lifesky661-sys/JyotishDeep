@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>জ্যোতিষদীপ | উন্নত বৈদিক জ্যোতিষ</title>
+<style>
+:root{--bg:#f8f1e3;--paper:#fffaf0;--ink:#2d2118;--muted:#776554;--gold:#b17a22;--line:#e6d2a9;--red:#6b2929;--red2:#8a4634}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;line-height:1.6}
+header{background:radial-gradient(circle at top,#895338,#4b2023 75%);color:#fff4dd;text-align:center;padding:34px 16px 28px;border-bottom:4px solid #c79a45}.symbol{font-size:28px;color:#e9c575}header h1{margin:2px;font-size:clamp(28px,5vw,42px)}header p{margin:8px auto 0;max-width:720px;color:#f3dfc2}.wrap{max-width:1150px;margin:22px auto;padding:0 14px 45px}.notice{border:1px solid #d8b66d;background:#fff0ca;border-radius:12px;padding:12px 15px;font-size:14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:17px;margin-top:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:19px;box-shadow:0 6px 18px #51300a0a}.card h2{margin:0 0 12px;color:var(--red);font-size:21px}label{display:block;font-weight:650;font-size:14px;margin:10px 0 4px}input,select{width:100%;padding:10px 11px;border:1px solid #d8c6a7;border-radius:9px;background:#fff;font:inherit;color:var(--ink)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}button{border:0;border-radius:10px;background:var(--red);color:#fff7e8;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer;margin-top:14px}button:hover{background:var(--red2)}button:disabled{opacity:.6;cursor:wait}.muted{font-size:13px;color:var(--muted)}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.tabs button{margin:0;background:#ead8b8;color:#4a2a21;padding:9px 12px}.tabs button.active{background:var(--red);color:#fff}.panel{display:none}.panel.active{display:block}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;white-space:nowrap}th{background:#f4e5c8;color:#4b2921}.chart{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:570px;margin:14px auto;border:2px solid #a87526;background:#fff8e8}.cell{min-height:92px;border:1px solid #d6b875;text-align:center;padding:8px 4px;font-size:13px;overflow-wrap:anywhere}.cell strong{color:#682d2c}.pill{display:inline-block;border-radius:99px;background:#f1e1c2;padding:3px 9px;font-size:12px;margin:2px}.metric{background:#fff5df;border:1px solid var(--line);padding:12px;border-radius:11px}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.metric strong{display:block;color:var(--red);font-size:18px}.hidden{display:none}.error{background:#ffe4df;border:1px solid #d88b7c;padding:12px;border-radius:10px;margin-top:12px}.success{background:#e8f2df;border:1px solid #b5c99d;padding:12px;border-radius:10px;margin-top:12px}footer{text-align:center;color:var(--muted);padding:20px;font-size:13px}.actions{display:flex;flex-wrap:wrap;gap:8px}.actions button{flex:1}.empty{color:#9a8469}
+@media(max-width:520px){.cell{min-height:75px;font-size:11px}.twocol{grid-template-columns:1fr}}
+@media print{header{background:#fff;color:#000;border-bottom:1px solid #777}header p{color:#333}.wrap>.grid:first-of-type,.tabs,.actions,.notice{display:none!important}.panel{display:block!important}.card{box-shadow:none;break-inside:avoid}}
+</style></head><body>
+<header><div class="symbol">✦ ॐ ✦</div><h1>জ্যোতিষদীপ</h1><p>উন্নত বাংলা বৈদিক জ্যোতিষ • লাহিড়ী / চিত্রপক্ষ অয়নাংশ • গ্রহগণনা ও চার্ট রিপোর্ট</p></header>
+<main class="wrap">
+<div class="notice"><strong>গণনা-স্বচ্ছতা:</strong> এই সংস্করণে গ্রহের দ্রাঘিমাংশ Swiss Ephemeris-এর মাধ্যমে গণনা হয়। লগ্ন, রাহু-কেতু, নক্ষত্র, D1/D9/D10/D60 এবং বিমশোত্তরী দশার প্রাথমিক গণনা সার্ভার-সাইডে করা হয়। জ্যোতিষীয় ব্যাখ্যা ঐতিহ্যভিত্তিক, বৈজ্ঞানিকভাবে নিশ্চিত ভবিষ্যদ্বাণী নয়। স্থানাঙ্ক ও জন্মসময় যাচাই করুন।</div>
+<div class="grid">
+<section class="card"><h2>জন্মতথ্য</h2><form id="form">
+<label>জন্মতারিখ</label><input id="date" type="date" required>
+<div class="twocol"><div><label>জন্মসময়</label><input id="time" type="time" value="17:00" required></div><div><label>সময় অঞ্চল</label><select id="timezone"><option value="Asia/Kolkata">ভারত (Asia/Kolkata)</option><option value="UTC">UTC</option><option value="Asia/Dhaka">বাংলাদেশ (Asia/Dhaka)</option><option value="Asia/Kathmandu">নেপাল (Asia/Kathmandu)</option></select></div></div>
+<div class="twocol"><div><label>অক্ষাংশ (Latitude)</label><input id="lat" type="number" step="any" value="22.5726" required></div><div><label>দ্রাঘিমাংশ (Longitude)</label><input id="lon" type="number" step="any" value="88.3639" required></div></div>
+<p class="muted">কলকাতার স্থানাঙ্ক ডিফল্ট হিসেবে দেওয়া। জন্মস্থান আলাদা হলে সেই স্থানের অক্ষাংশ/দ্রাঘিমাংশ দিন। স্থাননাম দিয়ে স্বয়ংক্রিয় geocoding এই সংস্করণে যুক্ত নেই।</p>
+<label>চার্ট পদ্ধতি</label><select disabled><option>নিরয়ণ রাশি • লাহিড়ী / চিত্রপক্ষ</option></select>
+<button id="submit" type="submit">জন্মকুণ্ডলী গণনা করুন</button>
+<div id="message" aria-live="polite"></div></form></section>
+<section class="card"><h2>গণনা ইঞ্জিন ও সীমা</h2>
+<div class="metric"><strong>Swiss Ephemeris</strong><span class="muted">pyswisseph Python প্যাকেজ • গ্রহের অবস্থান ও জ্যোতির্বৈজ্ঞানিক সময়</span></div><div style="height:8px"></div>
+<div class="metric"><strong>লাহিড়ী / চিত্রপক্ষ</strong><span class="muted">সাইডেরিয়াল রাশিচক্র; স্থানীয় জন্মসময় থেকে UTC-তে রূপান্তর</span></div><div style="height:8px"></div>
+<div class="metric"><strong>Whole-sign houses</strong><span class="muted">এই সংস্করণে ভাবগুলি লগ্নরাশি থেকে পূর্ণ-রাশি পদ্ধতিতে দেখানো হয়; Placidus নয়।</span></div>
+<p class="muted">D9/D10/D60 রাশি-বণ্টনের নিয়ম স্কুলভেদে পার্থক্য করতে পারে। রিপোর্টে ব্যবহৃত নিয়ম কোডে নির্দিষ্ট করা আছে। দশার তারিখে বছর-দৈর্ঘ্যের আনুমানিকতা রয়েছে; সূক্ষ্ম সফটওয়্যার-সমতুল্যতার জন্য যাচাই প্রয়োজন।</p>
+</section></div>
+<section id="report" class="hidden">
+<div class="grid"><div class="card"><h2>সারাংশ</h2><div id="summary" class="metrics"></div></div><div class="card"><h2>জন্ম-গণনার মেটাডেটা</h2><div id="meta" class="muted"></div></div></div>
+<div class="tabs"><button class="active" data-tab="d1">D1 রাশি</button><button data-tab="planets">গ্রহ তালিকা</button><button data-tab="vargas">D9 / D10 / D60</button><button data-tab="houses">১২ ভাব</button><button data-tab="dasha">দশা</button><button data-tab="notes">ব্যাখ্যার সীমা</button></div>
+<div id="d1" class="panel active card"><h2>D1 — রাশি চার্ট</h2><p class="muted">রাশি-ভিত্তিক whole-sign ভাব; গ্রহের অবস্থান সার্ভার থেকে গণিত।</p><div id="chartD1" class="chart"></div></div>
+<div id="planets" class="panel card"><h2>গ্রহের অবস্থান</h2><div class="tablewrap"><table><thead><tr><th>গ্রহ</th><th>রাশি</th><th>ডিগ্রি</th><th>নক্ষত্র / পদ</th><th>ভাব</th><th>গতি</th></tr></thead><tbody id="planetRows"></tbody></table></div></div>
+<div id="vargas" class="panel card"><h2>বিভাগীয় চার্ট</h2><p class="muted">এখানে প্রতিটি গ্রহের সংশ্লিষ্ট বিভাগীয় রাশি দেখানো হচ্ছে; এটি পূর্ণ পৃথক চার্ট গ্রিড নয়।</p><div class="tablewrap"><table><thead><tr><th>গ্রহ</th><th>D9 নবাংশ</th><th>D10 দশাংশ</th><th>D60 ষষ্ট্যাংশ</th></tr></thead><tbody id="vargaRows"></tbody></table></div></div>
+<div id="houses" class="panel card"><h2>১২ ভাব — whole-sign</h2><div class="tablewrap"><table><thead><tr><th>ভাব</th><th>রাশি</th><th>গ্রহ</th></tr></thead><tbody id="houseRows"></tbody></table></div></div>
+<div id="dasha" class="panel card"><h2>বিমশোত্তরী দশা</h2><p id="dashaIntro"></p><h3>মহাদশা</h3><div class="tablewrap"><table><thead><tr><th>দশাপতি</th><th>বছর</th><th>শুরু</th><th>শেষ</th></tr></thead><tbody id="mahaRows"></tbody></table></div><h3>প্রথম মহাদশার অন্তর্দশা</h3><div class="tablewrap"><table><thead><tr><th>অন্তর্দশাপতি</th><th>শুরু</th><th>শেষ</th></tr></thead><tbody id="antarRows"></tbody></table></div><p class="muted">দশার তারিখগুলো গণনামূলক আনুমানিকতা; নির্দিষ্ট জ্যোতিষ সফটওয়্যারের সঙ্গে মিলিয়ে নিন।</p></div>
+<div id="notes" class="panel card"><h2>কী গণনা হয়েছে, কী হয়নি</h2><ul><li>গ্রহের জ্যোতির্বৈজ্ঞানিক অবস্থান: Swiss Ephemeris থেকে গণনা।</li><li>রাহু: Mean Node; কেতু: রাহুর ঠিক বিপরীত বিন্দু। True Node নির্বাচন নেই।</li><li>লগ্ন/MC: Swiss Ephemeris; ভাব দেখানো হয়েছে whole-sign পদ্ধতিতে।</li><li>D9/D10/D60: নির্দিষ্ট সূত্রে বিভাগীয় রাশি নির্ণয়। বিভিন্ন পরম্পরায় নিয়ম আলাদা হতে পারে।</li><li>বিমশোত্তরী মহাদশা ও জন্ম-মহাদশার অন্তর্দশা দেখানো হয়; সব মহাদশার সম্পূর্ণ nested অন্তর্দশা এখনো নেই।</li><li>গ্রহদৃষ্টি, যোগ-দোষের পূর্ণ rule engine, শক্তি-স্কোর, PDF export এবং স্বয়ংক্রিয় স্থান-অনুসন্ধান এখনো বাস্তবায়িত নয়।</li><li>ব্যক্তিত্ব, বিবাহ, পেশা, অর্থ বা ভবিষ্যৎ সম্পর্কে নিশ্চিত ফলাফল এই সফটওয়্যার দাবি করে না।</li></ul><div class="actions"><button onclick="window.print()">রিপোর্ট প্রিন্ট / PDF</button><button onclick="downloadJSON()">JSON ডেটা ডাউনলোড</button></div></div>
+</section>
+<footer>জ্যোতিষদীপ • ঐতিহ্যবাহী বাংলা UI • ব্যক্তিগত জন্মতথ্য এই ডেমোতে সার্ভারে স্থায়ীভাবে সংরক্ষণ করা হয় না।</footer></main>
+<script>
+let lastData=null;
+const $=id=>document.getElementById(id);
+$('form').addEventListener('submit',async e=>{
+ e.preventDefault();$('submit').disabled=true;$('message').innerHTML='<p class="muted">গ্রহের অবস্থান গণনা হচ্ছে…</p>';
+ const payload={date:$('date').value,time:$('time').value,timezone:$('timezone').value,latitude:$('lat').value,longitude:$('lon').value};
+ try{
+  const r=await fetch('/api/chart',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  const data=await r.json();if(!r.ok)throw new Error(data.error||'গণনা করা যায়নি');
+  lastData=data;render(data);$('message').innerHTML='<div class="success">গণনা সম্পন্ন। ফলাফলটি নিচে দেখুন।</div>';$('report').classList.remove('hidden');$('report').scrollIntoView({behavior:'smooth'});
+ }catch(err){$('message').innerHTML='<div class="error">গণনা ব্যর্থ: '+escapeHtml(err.message)+'<br>তারিখ, সময়, স্থানাঙ্ক এবং ইনস্টল করা নির্ভরতা পরীক্ষা করুন।</div>'}
+ finally{$('submit').disabled=false}
+});
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(d){
+ $('summary').innerHTML=`<div class="metric"><span class="muted">লগ্ন</span><strong>${d.ascendant.sign}</strong><span>${d.ascendant.degree}</span></div><div class="metric"><span class="muted">লগ্ন নক্ষত্র</span><strong>${d.ascendant.nakshatra.name}</strong><span>পদ ${d.ascendant.nakshatra.pada}</span></div><div class="metric"><span class="muted">চন্দ্র রাশি</span><strong>${d.planets.find(p=>p.name==='চন্দ্র').sign}</strong></div><div class="metric"><span class="muted">জন্ম নক্ষত্র</span><strong>${d.dasha.birth_nakshatra}</strong><span>দশাপতি ${d.dasha.birth_dasha_lord}</span></div>`;
+ $('meta').innerHTML=`জন্মসময়: ${escapeHtml(d.meta.local_birth)}<br>UTC: ${escapeHtml(d.meta.utc_birth)}<br>স্থানাঙ্ক: ${d.meta.latitude}, ${d.meta.longitude}<br>অয়নাংশ: ${d.meta.ayanamsha}<br>ভাব পদ্ধতি: ${d.meta.house_system}<br>ইঞ্জিন: ${d.meta.engine}<br>Julian Day UT: ${d.meta.julian_day_ut}`;
+ const hs=d.houses;
+ // chart cells: simple 4x4 North-Indian-inspired square grid, display house labels and placements
+ const order=[1,2,3,4,12,0,0,5,11,0,0,6,10,9,8,7];
+ $('chartD1').innerHTML=order.map(h=>{if(!h)return '<div class="cell"><span class="empty">✦</span></div>';const item=hs[h-1];return `<div class="cell"><strong>${h}ম ভাব</strong><br>${item.sign}<br>${item.planets.length?item.planets.map(escapeHtml).join(', '):'<span class="empty">—</span>'}</div>`}).join('');
+ $('planetRows').innerHTML=d.planets.map(p=>`<tr><td>${escapeHtml(p.name)}</td><td>${p.sign}</td><td>${p.degree}</td><td>${p.nakshatra.name} / ${p.nakshatra.pada}</td><td>${p.whole_sign_house}</td><td>${p.retrograde?'বক্রী/নোড':'সরাসরি'}</td></tr>`).join('');
+ $('vargaRows').innerHTML=d.planets.map(p=>`<tr><td>${escapeHtml(p.name)}</td><td>${p.d9_sign}</td><td>${p.d10_sign}</td><td>${p.d60_sign}</td></tr>`).join('');
+ $('houseRows').innerHTML=d.houses.map(h=>`<tr><td>${h.house}</td><td>${h.sign}</td><td>${h.planets.length?h.planets.map(escapeHtml).join(', '):'—'}</td></tr>`).join('');
+ $('dashaIntro').textContent=`জন্ম নক্ষত্র ${d.dasha.birth_nakshatra}; জন্ম-মহাদশাপতি ${d.dasha.birth_dasha_lord}; জন্মসময়ে সেই দশার অবশিষ্ট আনুমানিক ${d.dasha.balance_years} বছর।`;
+ $('mahaRows').innerHTML=d.dasha.mahadasha.map(x=>`<tr><td>${x.lord}</td><td>${x.years}</td><td>${x.start}</td><td>${x.end}</td></tr>`).join('');
+ $('antarRows').innerHTML=d.dasha.first_mahadasha_antardasha.map(x=>`<tr><td>${x.lord}</td><td>${x.start}</td><td>${x.end}</td></tr>`).join('');
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');$(b.dataset.tab).classList.add('active')}));
+function downloadJSON(){if(!lastData)return;const blob=new Blob([JSON.stringify(lastData,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='jyotishdeep-report.json';a.click();URL.revokeObjectURL(a.href)}
+</script></body></html>
